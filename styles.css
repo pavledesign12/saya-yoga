@@ -493,10 +493,11 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   width: 100%;
 }
 .hero__content { display: flex; flex-direction: column; gap: 23px; max-width: 680px; }
+
 .hero__title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(50px, 7.9vw, 115px);
+  font-size: clamp(50px, 6.6vw, 96px);
   line-height: 1.0;
   letter-spacing: -1.52px;
   color: var(--cream);
@@ -1655,6 +1656,11 @@ body.is-past-hero .hero__bg { display: none; }
   .instructor__stat-label { color: rgb(107, 107, 94); }
 }
 
+
+/* Hero naslov u tačno dva reda na desktopu */
+@media (min-width: 768px) {
+  .hero__title { max-width: none; white-space: nowrap; }
+}
 
 /* ---------- Jedinstven vertikalni razmak sekcija (mobilno) ---------- */
 @media (max-width: 767px) {
