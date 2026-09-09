@@ -972,8 +972,9 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   .pricing__grid { grid-template-columns: 1fr; }
   .price-card { border-right: none; border-bottom: 0.8px solid var(--border-light); }
 
+  .why__inner { align-items: stretch; }
   .benefits { flex-direction: column; }
-  .benefits__item { border-right: none; border-bottom: 0.8px solid var(--border-light); }
+  .benefits__item { border-right: none; border-bottom: 0.8px solid var(--border-light); align-items: flex-start; text-align: left; padding-left: 0; padding-right: 0; }
   .benefits__item--last { border-bottom: none; }
 
   .hero__stats { flex-direction: column; }
